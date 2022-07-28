@@ -1,0 +1,581 @@
+body{
+	background: white;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card-stats{
+	min-width: 220px;
+	background: rgba(255, 255, 255, 1.0);
+	box-shadow: 1px 3px 2px rgba(0, 0, 0, .3);	
+	margin: 10px;
+	border-radius: 10px;
+	padding: 10px;
+}
+.stats {		
+	color: rgba(0, 0, 0, .6);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+}
+
+.stats__item-title{	
+	max-height: 40px;
+}
+
+.stats__item{
+	color: rgba(0, 0, 0, .5);
+	display: grid;
+	grid-template-columns: 3fr 8fr;
+	height: 25px;
+	grid-gap: 20px;
+
+}
+
+.stats__item-name{
+	margin: auto ;
+	margin-left: 10px;
+	width: 50px;
+	
+}
+
+.stats__item-tube{
+	height: 7px;
+	
+	border-radius: 10px;
+	background: rgba(0, 0, 0, .2);
+	margin: auto 0;
+}
+
+.stats__item-tube-liquid-1{
+	height: 100%;
+	width: 10%;
+	background: rgba(0, 134, 255, 1);
+	border-radius: 10px;
+}
+
+.stats__item-tube-liquid-2{
+	height: 100%;
+	width: 10%;
+	background: rgba(0, 134, 255, 1);
+	border-radius: 10px;
+}
+
+.stats__item-tube-liquid-3{
+	height: 100%;
+	width: 30%;
+	background: rgba(0, 134, 255, 1);
+	border-radius: 10px;
+}
+
+.stats__item-tube-liquid-4{
+	height: 100%;
+	width: 80%;
+	background: rgba(0, 134, 255, 1);
+	border-radius: 10px;
+}
+
+.stats__item-tube-liquid-5{
+	height: 100%;
+	width: 50%;
+	background: rgba(0, 134, 255, 1);
+	border-radius: 10px;
+}
+
+.card{
+	box-shadow: 1px 3px 2px rgba(0, 0, 0, .3);	
+	max-width: 250px;
+	margin: 10px;
+	border-radius: 20px;
+	background: white;
+}
+
+.personal-data{
+
+	gap: 30px;
+	max-width: 200px;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 11px;
+	color: rgba(0, 0, 0, .7);
+}
+
+
+.img-container{
+	height: 210px;
+	width: 100%;
+}
+
+
+.item-name h4{
+	font-size: 14px;
+	
+}
+
+.card img{
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+i{	
+	font-size: 14px;
+}
+.item-contact__phone {
+	margin: 5px 0;
+}
+}
+.fa-envelope{
+	padding: 0 10px 0 0;
+}
+.fa-phone{
+	padding: 0 10px 0 0;
+}
+
+.contador__title{
+	background: white;
+	font-size: 18px;
+	display: flex;
+	align-items: flex-start;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 10px;
+}
+  
+.projects{
+	box-shadow: 0px 2px 0px rgba(0, 150, 255, .8);
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	font-size: 11px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 10px;
+	max-width: 250px;
+}
+
+.off{
+	display: none;
+}
+
+.projects__img-container{
+	height: 50%;
+	width: 100%;
+	font-size: 11px;
+	font-family: 'Poppins', sans-serif;	
+	color: rgba(0, 0, 0, .8);
+	border-radius: 10px;
+}
+.projects__img-container figcaption{
+	padding: 7px 10px;
+
+}
+.projects__bottom h4{
+	font-size: 15px;
+	font-weight: 600;
+}
+.projects__img-container img{
+	border-radius: 15px;
+	height: 100%;
+	max-width: 100%;
+	padding:10px;
+	margin: 0px 0;
+	object-fit: cover;
+}
+.projects__bottom{
+	display: grid;
+	grid-template-rows: 1fr 4fr;
+	grid-gap: 15px;
+}
+.projects__bottom {
+	margin: 0 10px;
+	max-width: 90%;
+	max-height: 90%;
+}
+.projects__bottom-buttons{
+	display: flex;
+	margin-bottom: 30px;
+	justify-content:start;
+	align-items: center;
+	gap: 10px;
+
+}
+.projects__button{
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+	color: rgba(0, 160, 255, 1.0);;
+	border: 2px solid rgba(0, 160, 255, 1.0);
+	background: transparent;
+	transition: 0.2s;
+}
+
+.projects__button:hover{
+	transform: scale(1.1);
+	
+	
+	
+
+}
+.projects-2{
+	padding: 20px 0 0 20px;
+	background: white;
+	display: grid;
+	grid-template-columns: 2fr 3fr;	
+	padding-right: 0;
+	font-size: 12px;
+	grid-gap: 5px;
+	border-radius: 5px;
+	box-shadow: -2px 3px 5px rgba(0, 0, 0, .3);	
+}
+
+.projects-2__paragraph{
+	font-family: 'Poppins', sans-serif;
+	margin: 10px 0 20px 0;
+	display: grid;
+	grid-gap: 20px;
+	color: rgba(0, 0, 0, .7);
+	padding-right: 40px;
+	grid-column: span 2;
+
+}
+.projects-2__title{
+	margin-top: 20px;
+	font-family: 'Poppins', sans-serif;
+	color: rgba(0, 0, 0, .7);
+	font-size: 12px;
+}
+.projects-2__img{
+	max-height: 320px;
+}
+
+.projects-2__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.hobbies{
+	font-size: 11px;
+	display: grid;
+	font-family: 'Poppins', sans-serif;
+	margin: 10px;
+	padding: 10px;
+	background: white;
+	grid-gap: 25px;
+	color: rgba(0, 0, 0, .8);
+	border-radius: 5px;
+	box-shadow: -2px 3px 5px rgba(0, 0, 0, .3);	
+
+}
+.hobbies__item{
+	display: grid;
+	grid-gap: 10px;
+	background: white;
+	border-radius: 10px;
+	
+	
+}
+.hobbies__item-img-container{
+	height: 160px;
+	max-width: 300px;
+
+}
+.hobbies__item-text{
+	display: grid;
+	grid-gap: 10px;
+}
+.hobbies__item img{
+	border-radius: 10px;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+
+}
+.projects-2__title p{
+	display: none;
+
+}
+.uno{
+	border: 2px solid transparent;
+	color: white;
+	background: rgba(0, 160, 255, 1.0);	
+}
+.uno:hover{
+	background: white;
+	color: rgba(0, 160, 255, 1.0);
+	border: 2px solid rgba(0, 160, 255, 1.0);
+}
+
+
+@media screen and (min-width: 650px){
+	.card-stats{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	.stats{
+
+	font-size: 15px;
+	
+	}
+	
+
+	.main{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 30px;
+		padding: 5%;
+	}
+	.card{
+		grid-column: span 2;
+		max-height: 210px;
+		flex-basis: 100%;
+		max-width: none;
+		display: flex;
+		flex-direction: row;
+		max-width: 800px;
+		margin: 0px 10px;
+	}
+
+	.personal-data{
+	max-width: none;	
+	overflow: hidden;
+	font-size: 19px;
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 11px;
+	color: rgba(0, 0, 0, .7);
+	flex-wrap: wrap;
+	flex-basis: 100%;
+}
+	.description{
+		font-size: 13px;
+		flex: 0 1 100%;
+	}
+
+	.personal-data h4{
+		font-size: 17px;
+		padding-bottom: 5px;
+	}
+	.personal-data i{
+		font-size: 18px;
+		padding: 0 5PX 0 0px;
+
+	}
+	.item-name, .item-contact{
+		font-size: 13px;
+
+	}
+
+
+	.img-container{
+		max-width: 200px;
+	}
+
+
+	.projects-2__title p{
+		
+
+	}
+
+	.projects-2__title h2{
+		margin-bottom: 20px;
+	}
+	
+
+
+	.hobbies{
+		margin: 0 auto;
+		width: 100%;
+		grid-column: span 2;
+	}
+	.hobbies h2{
+		grid-column: span 3;
+	}
+	
+	.hobbies{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.contador{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0 auto;
+		grid-gap: 20px;
+		width: 100%;
+		grid-column: span 2;
+
+	}
+	.contador__tags{
+		display: flex;
+		justify-content: flex-start;
+		gap: 5%;
+	}
+	.contador__tags-button{	
+		font-family: 'Poppins', sans-serif;
+		background: white;
+		height: 50px;
+		min-width: 80px;
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 13px;
+		font-weight: 300;
+		border: 1px solid transparent;
+		border-bottom: 1px solid  rgba(0, 170, 255, 1.0);
+		cursor: pointer;
+	}
+	.contador__tags-button:hover{
+		background: rgba(0, 170, 255, 1.0);
+		color: white;
+		border: 1px solid white;
+
+	}
+	.contador__tags-button:focus{
+		background: rgba(0, 170, 255, 1.0);
+		color: white;
+		border: 1px solid white;
+		transform: scale(.9);
+
+	}
+
+	.contador__title{
+		
+	}
+	
+	.project-position{
+		grid-column: span 2;
+		height: 500px;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.all-projects{	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		transition: .3s;
+		gap: 3%;
+		grid-column: span 2;
+		position: absolute;
+
+		
+	}
+	.animation-right {
+		transition: 0s;
+		animation: page-change .5s;
+	}
+	@keyframes page-change{
+		0% {
+			transform: translateX(50%);
+		}
+		25%{ 
+			transform: translateX(100%);
+		}
+		31%{
+			opacity: 0;
+		
+		}
+		45%{ 
+		transform: translateX(-100%); }
+		90%{
+			opacity: 1;
+		}
+		80%{
+			transform: translateX(0%);
+		}
+	}
+	.animation-left {
+		transition: 0s;
+		animation: page-change2 .5s;
+	}
+	@keyframes page-change2{
+		0% {
+			transform: translateX(-50%);
+		}
+		25%{ 
+			transform: translateX(-100%);
+		}
+		31%{
+			opacity: 0;
+		
+		}
+		45%{ 
+		transform: translateX(100%); }
+		90%{
+			opacity: 1;
+		}
+		80%{
+			transform: translateX(0%);
+		}
+	}
+	.projects__slider{	
+		grid-column: span 2;
+		width: 100%;
+		display:flex ;
+		align-items: center;
+		justify-content: center;
+		margin: 10px 0 50px 0;
+	}
+	.projects__slider-button{
+		width: 50px;
+		height: 50px;
+		background: white;
+		border: 1px solid rgba(0, 160, 255, .8);
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 3px;
+		transition: 0.2s;
+	}
+	.projects__slider-button:hover{
+		background:rgba(0, 170, 255, 1.0);
+		color: white;
+		box-shadow: 3px 0 3px rgba(0, 170, 255, 1.0);
+		border: 1px solid transparent;
+	}
+	.projects:hover{
+		transition: .3s;
+		transform: scale(1.1);
+
+	}
+
+
+
+
+}
+	@media screen and (max-width: 834px){
+		.stats{
+
+			font-size: 13px;
+		}
+		.all-projects{
+			gap: 0.5%;
+		}
+	}
+/*we must create an slider wich is gonna change 3 cards at the same time
+whith each action. I wanna try using a numeric selector 
+for choosing the differents pages, i also want to add some arrows later though
+so, the very first thing that we need it´s to make more cards*/
