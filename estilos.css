@@ -5,14 +5,16 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0 5%;
+	gap: 30px;
 }
 .card-stats{
-	min-width: 220px;
+	width: 100%;
 	background: rgba(255, 255, 255, 1.0);
 	box-shadow: 1px 3px 2px rgba(0, 0, 0, .3);	
-	margin: 10px;
 	border-radius: 10px;
 	padding: 10px;
+
 }
 .stats {		
 	color: rgba(0, 0, 0, .6);
@@ -23,7 +25,130 @@ body{
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-gap: 10px;
+
 }
+
+
+.fa-arrow-left{
+	font-size: 40px;
+	position: absolute;
+	height: 50px;
+	left: 0 ;
+	color: red;
+	color: rgba(0, 134, 255, 0.6);
+
+}
+.button-mobile{
+	transition: 0.2s;
+}
+.button-mobile:hover{
+	transform: scale(1.3);
+}
+.button-mobile:active{
+	transition: 0.2s;
+	color: rgba(0, 134, 255, 1);
+	}
+.animation-arrow-left {
+
+	animation: toLeft .5s;
+}
+@keyframes toLeft{
+	0%{
+		transform: translateX(50%);
+	}
+	25%{
+		transform: translateX(100%);
+	}
+	35%{
+		opacity: 0;
+	}
+	50%{
+		transform: translateX(-100%);
+	}
+	
+
+	100%{
+		transform: translateX(0);
+	}
+
+}
+.animation-arrow-right{
+	animation: toRight .5s;
+}
+@keyframes toRight{
+
+	25%{
+		transform: translateX(-300%);
+	}
+	40%{opacity: 0;
+		
+	}
+	50%{
+		transform: translateX(150%);
+	}
+	60%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0);
+	}
+
+}
+.fa-arrow-right{
+	font-size: 40px;
+	position: absolute;
+	right: 0;
+	color: rgba(0, 134, 255, 0.7);
+}
+	.animation-right {
+		transition: 0s;
+		animation: page-change .5s;
+	}
+	@keyframes page-change{
+		0% {
+			transform: translateX(50%);
+		}
+		25%{ 
+			transform: translateX(100%);
+		}
+		31%{
+			opacity: 0;
+		
+		}
+		45%{ 
+		transform: translateX(-100%); }
+		90%{
+			opacity: 1;
+		}
+		80%{
+			transform: translateX(0%);
+		}
+	}
+	.animation-left {
+		transition: 0s;
+		animation: page-change2 .5s;
+	}
+	@keyframes page-change2{
+		0% {
+			transform: translateX(-50%);
+		}
+		25%{ 
+			transform: translateX(-100%);
+		}
+		31%{
+			opacity: 0;
+		
+		}
+		45%{ 
+		transform: translateX(100%); }
+		90%{
+			opacity: 1;
+		}
+		80%{
+			transform: translateX(0%);
+		}
+	}
+
 
 .stats__item-title{	
 	max-height: 40px;
@@ -35,19 +160,21 @@ body{
 	grid-template-columns: 3fr 8fr;
 	height: 25px;
 	grid-gap: 20px;
+	width: 100%;
 
 }
 
 .stats__item-name{
 	margin: auto ;
 	margin-left: 10px;
-	width: 50px;
+	min-width: 50px;
+	
 	
 }
 
 .stats__item-tube{
 	height: 7px;
-	
+	width: 100%;
 	border-radius: 10px;
 	background: rgba(0, 0, 0, .2);
 	margin: auto 0;
@@ -91,9 +218,9 @@ body{
 .card{
 	box-shadow: 1px 3px 2px rgba(0, 0, 0, .3);	
 	max-width: 250px;
-	margin: 10px;
 	border-radius: 20px;
 	background: white;
+	padding: 10px;
 }
 
 .personal-data{
@@ -152,7 +279,68 @@ i{
 	font-family: 'Poppins', sans-serif;
 	border-radius: 10px;
 }
-  
+ 	.contador{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0 auto;
+	grid-gap: 20px;
+	width: 100%;
+	grid-column: span 2;
+}
+.contador__tags{
+	display: flex;
+	justify-content: flex-start;
+	gap: 5%;
+}
+.contador__tags-button{	
+	font-family: 'Poppins', sans-serif;
+	background: white;
+	height: 50px;
+	min-width: 80px;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 13px;
+	font-weight: 300;
+	border: 1px solid transparent;
+	border-bottom: 1px solid  rgba(0, 170, 255, 1.0);
+	cursor: pointer;
+}
+.contador__tags-button:hover{
+	background: rgba(0, 170, 255, 1.0);
+	color: white;
+	border: 1px solid white;
+}
+.contador__tags-button:focus{
+	background: rgba(0, 170, 255, 1.0);
+	color: white;
+	border: 1px solid white;
+	transform: scale(.9);
+
+	}
+
+
+		.project-position{
+		grid-column: span 2;
+		height: 500px;
+		width: 100%;
+		max-width: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		
+	}
+
+	.all-projects{	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 250px;
+		transition: .3s;
+		position: relative;		
+	}
+
+
 .projects{
 	box-shadow: 0px 2px 0px rgba(0, 150, 255, .8);
 	height: 450px;
@@ -161,10 +349,12 @@ i{
 	justify-content: space-between;
 	align-items: center;
 	background: white;
+	margin: 0 10px;
+	max-width: 250px;
 	font-size: 11px;
 	font-family: 'Poppins', sans-serif;
 	border-radius: 10px;
-	max-width: 250px;
+	
 }
 
 .off{
@@ -231,8 +421,14 @@ i{
 	
 
 }
+.projects__slider-button{
+	display: none;
+}
+.projects__slider{
+	display: none;
+}
 .projects-2{
-	padding: 20px 0 0 20px;
+	padding: 20px;
 	background: white;
 	display: grid;
 	grid-template-columns: 2fr 3fr;	
@@ -243,9 +439,9 @@ i{
 	box-shadow: -2px 3px 5px rgba(0, 0, 0, .3);	
 }
 
+
 .projects-2__paragraph{
 	font-family: 'Poppins', sans-serif;
-	margin: 10px 0 20px 0;
 	display: grid;
 	grid-gap: 20px;
 	color: rgba(0, 0, 0, .7);
@@ -273,13 +469,12 @@ i{
 	font-size: 11px;
 	display: grid;
 	font-family: 'Poppins', sans-serif;
-	margin: 10px;
-	padding: 10px;
 	background: white;
 	grid-gap: 25px;
 	color: rgba(0, 0, 0, .8);
 	border-radius: 5px;
 	box-shadow: -2px 3px 5px rgba(0, 0, 0, .3);	
+	padding: 10px;
 
 }
 .hobbies__item{
@@ -324,6 +519,14 @@ i{
 
 
 @media screen and (min-width: 650px){
+.fa-arrow-right, .fa-arrow-left {
+		display: none;
+		color: transparent;
+		font-size: 0;
+
+		
+	}
+
 	.card-stats{
 	display: flex;
 	height: 100%;
@@ -419,54 +622,13 @@ i{
 	.hobbies{
 		grid-template-columns: repeat(3, 1fr);
 	}
-	.contador{
-		display: grid;
-		grid-template-columns: 1fr;
-		margin: 0 auto;
-		grid-gap: 20px;
-		width: 100%;
-		grid-column: span 2;
 
-	}
-	.contador__tags{
-		display: flex;
-		justify-content: flex-start;
-		gap: 5%;
-	}
-	.contador__tags-button{	
-		font-family: 'Poppins', sans-serif;
-		background: white;
-		height: 50px;
-		min-width: 80px;
-		padding: 10px;
-		border-radius: 10px;
-		font-size: 13px;
-		font-weight: 300;
-		border: 1px solid transparent;
-		border-bottom: 1px solid  rgba(0, 170, 255, 1.0);
-		cursor: pointer;
-	}
-	.contador__tags-button:hover{
-		background: rgba(0, 170, 255, 1.0);
-		color: white;
-		border: 1px solid white;
 
-	}
-	.contador__tags-button:focus{
-		background: rgba(0, 170, 255, 1.0);
-		color: white;
-		border: 1px solid white;
-		transform: scale(.9);
 
-	}
-
-	.contador__title{
-		
-	}
-	
 	.project-position{
 		grid-column: span 2;
 		height: 500px;
+		max-width: none;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -476,62 +638,21 @@ i{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		max-width: none;
 		width: 100%;
 		transition: .3s;
 		gap: 3%;
 		grid-column: span 2;
-		position: absolute;
+		position: relative;	
+	}
 
-		
-	}
-	.animation-right {
-		transition: 0s;
-		animation: page-change .5s;
-	}
-	@keyframes page-change{
-		0% {
-			transform: translateX(50%);
-		}
-		25%{ 
-			transform: translateX(100%);
-		}
-		31%{
-			opacity: 0;
-		
-		}
-		45%{ 
-		transform: translateX(-100%); }
-		90%{
-			opacity: 1;
-		}
-		80%{
-			transform: translateX(0%);
-		}
-	}
-	.animation-left {
-		transition: 0s;
-		animation: page-change2 .5s;
-	}
-	@keyframes page-change2{
-		0% {
-			transform: translateX(-50%);
-		}
-		25%{ 
-			transform: translateX(-100%);
-		}
-		31%{
-			opacity: 0;
-		
-		}
-		45%{ 
-		transform: translateX(100%); }
-		90%{
-			opacity: 1;
-		}
-		80%{
-			transform: translateX(0%);
-		}
-	}
+.projects{
+	transition: 1s;
+}
+.off{
+	transition: 1s;
+}
+
 	.projects__slider{	
 		grid-column: span 2;
 		width: 100%;
@@ -541,6 +662,7 @@ i{
 		margin: 10px 0 50px 0;
 	}
 	.projects__slider-button{
+		display: block;
 		width: 50px;
 		height: 50px;
 		background: white;
@@ -575,7 +697,11 @@ i{
 			gap: 0.5%;
 		}
 	}
+
 /*we must create an slider wich is gonna change 3 cards at the same time
 whith each action. I wanna try using a numeric selector 
 for choosing the differents pages, i also want to add some arrows later though
-so, the very first thing that we need it´s to make more cards*/
+so, the very first thing that we need it´s to make more cards
+
+now we have to make work the cards in mobile´s version
+*/
