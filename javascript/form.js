@@ -57,13 +57,16 @@ const x3 = (s)=>{
 
 
 function slide1(s){
+	if(!s){
+		 document.querySelector(".all-projects").classList.remove("animation-left");
+		void document.querySelector(".main").offsetWidth;
+		document.querySelector(".all-projects").classList.add("animation-left")
+		return
+	}
 	let x = null;
-	if (filtredCards.length > 0) {
-		x = filtredCards
-	}
-	else{
-		x = cards
-	}
+	
+	filtredCards.length ?	x = filtredCards : x = cards;
+
 		if(document.querySelector(".all-projects").classList.length > 1){
 		document.querySelector(".all-projects").classList.remove("animation-right") ||
 		 document.querySelector(".all-projects").classList.remove("animation-left");
@@ -115,10 +118,11 @@ if(mode === "desktop"){
 if(mode === "mobile"){
 	
 	mobileTransform();
+	slide1()
 }
 
-
-buttonController(filtredCards)
+count();
+buttonController(filtredCards);
 
 }
 
@@ -228,6 +232,13 @@ const check = () =>{
 		mode = "desktop"
 		desktopTransform()
 	}
+}
+function count(){
+	let x = cards
+	if(filtredCards.length > 0){
+		x = filtredCards
+	}
+	document.querySelector(".contador__title-p").textContent = `Projects (${x.length})`
 }
 
 check();

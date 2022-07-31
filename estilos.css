@@ -224,7 +224,6 @@ body{
 }
 
 .personal-data{
-
 	gap: 30px;
 	max-width: 200px;
 	font-size: 14px;
@@ -354,8 +353,14 @@ i{
 	font-size: 11px;
 	font-family: 'Poppins', sans-serif;
 	border-radius: 10px;
+
 	
 }
+	.projects:hover{
+		transition: .3s;
+		transform: scale(1.1);
+
+	}
 
 .off{
 	display: none;
@@ -549,7 +554,6 @@ i{
 	}
 	.card{
 		grid-column: span 2;
-		max-height: 210px;
 		flex-basis: 100%;
 		max-width: none;
 		display: flex;
@@ -647,7 +651,7 @@ i{
 	}
 
 .projects{
-	transition: 1s;
+	transition: 0.5s;
 }
 .off{
 	transition: 1s;
@@ -678,14 +682,6 @@ i{
 		box-shadow: 3px 0 3px rgba(0, 170, 255, 1.0);
 		border: 1px solid transparent;
 	}
-	.projects:hover{
-		transition: .3s;
-		transform: scale(1.1);
-
-	}
-
-
-
 
 }
 	@media screen and (max-width: 834px){
